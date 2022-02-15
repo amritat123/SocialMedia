@@ -1,0 +1,14 @@
+// {
+//     "mongoURI":"mongodb+srv://ShaliniVadivelu97:Srirama!123@smacluster.httqu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+//     "jwtSecret":"mysecrettoken",
+//     "githubClientId": "eac3d2db2ed9843feb20",
+//     "githubSecret": "a84e250d01dc4e64e7312d181a5e88d272ebd100"
+// } 
+
+{
+    "mongoURI":"mongodb+srv://Amrita_tiwari:amritatiwari@amrita.o7ufh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "githubClientId": "e70ead3a909230b64a87",
+    "githubSecret":"128b505d42cb915008acae36557acb529d1e7ffb"
+
+}
