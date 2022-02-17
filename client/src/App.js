@@ -30,6 +30,7 @@ if (localStorage.token) {
 }
 
 const App = () =>  {
+    //hooks is listener
     useEffect(() => {
         store.dispatch(loadUser());
     }, []);
