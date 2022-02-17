@@ -38,7 +38,7 @@ const Register = ({ setAlert, register, isAuthenticated  }) => {
     return <Redirect to ='/dashboard' />
   }
    return (
-     <Fragment> 
+    <Fragment>
    <h1 className="large text-primary">Sign Up</h1>
       <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
       <form className="form" onSubmit ={e => onSubmit(e)}>
@@ -49,7 +49,7 @@ const Register = ({ setAlert, register, isAuthenticated  }) => {
           name="name" 
           value={name} 
   // onChange function
-          onChange= {e=> onChange(e)}  
+          onChange= { e=> onChange(e)}  
           //required 
         />
         </div>
