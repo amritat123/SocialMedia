@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {connect } from 'react-redux';
 // alerts is a destructor here
 const Alert = ({ alerts}) => 
