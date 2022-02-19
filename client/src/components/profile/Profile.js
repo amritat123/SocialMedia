@@ -7,6 +7,8 @@ import ProfileTop from "./ProfileTop";
 import ProfileAbout from "./ProfileAbout";
 import ProfileExperience from "./ProfileExperience";
 import ProfileEducation from "./ProfileEducation";
+import ProfileGithub from "./ProfileGithub";
+
 import { getProfileById } from "../../actions/profile";
 const Profile = ({
   getProfileById,
@@ -58,6 +60,10 @@ const Profile = ({
               ))}
             </Fragment>) : (<h4>No education creadentails</h4>)}
           </div>
+          {/* github exist */}
+          {profile.githubusername && (
+            <ProfileGithub username={profile.githubusername}/>
+          )}
           </div>
         </Fragment>
       )}
@@ -70,7 +76,7 @@ Profile.propTypes = {
   auth: PropTypes.object.isRequired
 };
 
-const mayStateToProps = (state) => ({
+const mayStateToProps = state => ({
   profile: state.profile,
   auth: state.auth
 });
