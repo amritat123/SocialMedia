@@ -59,8 +59,9 @@ const Profile = ({
                 education={education} />
               ))}
             </Fragment>) : (<h4>No education creadentails</h4>)}
+
           </div>
-          {/* github exist */}
+          
           {profile.githubusername && (
             <ProfileGithub username={profile.githubusername}/>
           )}
