@@ -19,6 +19,8 @@ const Profile = ({
   useEffect(() => {
     getProfileById(match.params.id);
   }, [getProfileById]);
+  console.log('profile data',profile);
+  console.log("loaing",loading);
 
   return (
     <Fragment>
