@@ -24,7 +24,7 @@ const ProfileExperience =  ({experience: {
     </p>
 </div>;
 
-ProfileExperience.protoType ={
+ProfileExperience.propTypes ={
     profile:PropTypes.array.isRequired
 };
 
