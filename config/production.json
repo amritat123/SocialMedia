@@ -1,3 +1,4 @@
+//  different DataBase
 {
     "mongoURI":"mongodb+srv://Amrita_tiwari:amritatiwari@amrita.o7ufh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "jwtSecret":"mysecrettoken",
