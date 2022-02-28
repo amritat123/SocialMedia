@@ -4,20 +4,14 @@ import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { connect } from 'react-redux';
 import { addLike, removeLike , deletePost} from '../../actions/post';
+import Post from '../post/Post';
 
 const PostItem = ({ auth, post: {
   addLike,
   removeLike,
   deletePost,
-  _id,
-  text,
-  name,
-  avatar,
-  user, 
-  likes,
-  comments,
-  date
-    }
+  _id,text,name,avatar,user, likes,comments,date},
+  showActions
 }) => (
         <div class="post bg-white p-1 my-1">
           <div>
@@ -33,9 +27,10 @@ const PostItem = ({ auth, post: {
             </p>
             <p class="post-date">Posted on <Moment format="YYYY/MM/DD">{date}</Moment>
             </p>
-
-            <button 
-            onClick ={e => addLike(_id)} 
+            {showActions && (
+            <Fragment>
+              <button 
+            onClick ={ e => addLike(_id)} 
             type="button" 
             class="btn btn-light">
               <i class="fas fa-thumbs-up" />{' '}
@@ -51,7 +46,7 @@ const PostItem = ({ auth, post: {
               <i class="fas fa-thumbs-down" />{' '}
             </button>
             <Link 
-            to={`/post/${_id}`} 
+            to={`/posts/${_id}`} 
             class="btn btn-primary">
               Discussion {" "}
               {comments.length >0 && ( 
@@ -66,12 +61,16 @@ const PostItem = ({ auth, post: {
                 type="button" 
                 class="btn btn-danger">
                 <i class="fas fa-times" />
-            </button>
+              </button>
             )}
-          </div>
-        </div>
-    );
-
+          </Fragment>
+        )}
+      </div>
+    </div>
+  );
+PostItem.defaultProps = {
+  showActions:true
+} 
 PostItem.propTypes = {
     post : PropTypes.object.isRequired,
     auth : PropTypes.object.isRequired,
