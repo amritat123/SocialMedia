@@ -25,6 +25,12 @@ export const UPDATE_LIKES = 'UPDATE_LIKES';
 //Delete post
 export const DELETE_POST = 'DELETE_POST';
 export const ADD_POST = 'ADD_POST';
+//ADD COMMENTS
+export const ADD_COMMENT = 'ADD_COMMENT';
+//REMOVE COMMENTS
+export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+
+
 
 
 
