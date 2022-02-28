@@ -83,7 +83,6 @@ export const deletePost = id => async dispatch => {
     }
 };
 
-
 //ADD POST
 export const addPost = formData => async dispatch => {
 
