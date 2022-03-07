@@ -1,8 +1,7 @@
-//  different DataBase
+
 {
     "mongoURI":"mongodb+srv://Amrita_tiwari:amritatiwari@amrita.o7ufh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "jwtSecret":"mysecrettoken",
     "githubClientId": "e70ead3a909230b64a87",
     "githubSecret":"128b505d42cb915008acae36557acb529d1e7ffb"
-
 }
